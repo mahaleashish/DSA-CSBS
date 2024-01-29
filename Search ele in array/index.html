@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search ele in array</title>
+</head>
+<body>
+  
+  <input type="text" placeholder="Enter item" id="item">
+  <button onclick="findItem()">Click to find</button>
+
+  <script>
+
+    function findItem(){
+      let data = [20,40,60,5,10,70,80,99];
+    let item = document.getElementById("item").value;
+    item = parseInt(item);
+    let index = undefined;
+    //console.warn(item);
+
+    for(let i=0; i<data.length; i++){
+      if(data[i]===item){
+        index = i;
+        
+        break;
+      }
+    }
+    console.warn(index);
+    }
+    //findItem();
+  </script>
+</body>
+</html>
