@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr1 = [3, 7, 12, 34, 56, 90];
+      let arr2 = [4, 9, 25, 45];
+      let data = [];
+      let i = 0;
+      let j = 0;
+      let k = 0;
+      while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+          data[k] = arr1[i];
+          i++;
+        } else {
+          data[k] = arr2[j];
+          j++;
+        }
+        k++;
+      }
+      console.log(data);
+        while (i<arr1.length) {
+          data[k] = arr1[i];
+          i++;
+          k++;
+        }    
+      console.log(data);
+    </script>
+  </body>
+</html>
