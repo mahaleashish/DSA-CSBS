@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merge two array</title>
+
+  <script>
+    //Merge two array manually
+   let arr1 = [20,30,33,21,108];
+   let arr2 = [40,43,45,44,50];
+   let data = [];
+   for(let i=0; i<arr1.length; i++){
+    data[i] = arr1[i];
+    
+      for(let j=0; j<arr2.length; j++){
+        data[arr1.length+j] = arr2[j];
+      }
+   }
+   console.log(data);
+   
+
+
+  </script>
+
+</head>
+<body>
+  
+</body>
+</html>
